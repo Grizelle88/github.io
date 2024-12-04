@@ -122,21 +122,37 @@ img.rounded-full {
 
 
 
-body {
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  width: 100%; /* Ensure the body spans the full width of the viewport */
 }
 
-img {
-  max-width: 100%; /* Ensure images do not exceed their container */
-  height: auto; /* Maintain aspect ratio */
+* {
+  box-sizing: border-box; /* Include padding and border in element width/height */
 }
 
-.container, .row, .col {
-  width: 100%; /* Ensure containers do not exceed the viewport */
-  max-width: 100%; /* Prevent exceeding full width */
-  padding: 0 15px; /* Add padding for better layout */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+/* Reset any possible oversized elements */
+.container,
+.row {
+  max-width: 100%; /* Prevent elements from exceeding the viewport width */
 }
 
+/* Additional Specific Fixes */
+.banner,
+.bottom-img,
+.footer-img {
+  width: 100%; /* Ensure images don't overflow */
+}
+
+.navbar,
+.navbar-brand img,
+.navbar-nav {
+  max-width: 100%; /* Prevent navbar content overflow */
+}
+
+.slider .slide {
+  max-width: 100%; /* Contain slides within their container */
+}
