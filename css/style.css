@@ -117,23 +117,28 @@ img.rounded-full {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
+
+
+
 body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure body takes up full width */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-* {
+/* Ensure all containers and elements take up full width */
+.container, .row, .col, .navbar, .banner, .services, .about, .testimonials, .footer {
+    width: 100%; /* Take up full width */
+    max-width: 100%; /* Prevent exceeding full width */
+    padding: 0 15px; /* Add padding for better layout */
+    margin: 0 auto; /* Center elements horizontally */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-img {
-    max-width: 100%; /* Ensure images do not exceed their container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.container, .row, .col {
-    width: 100%; /* Ensure containers do not exceed the viewport */
-}
-
+/* Adjust margins and padding for mobile devices */
 @media (max-width: 768px) {
     .navbar-nav {
         margin-right: 0; /* Adjust margins for mobile */
@@ -143,7 +148,8 @@ img {
         padding: 20px; /* Adjust padding for mobile */
     }
 
-    /* Add other mobile-specific styles here */
+    .services, .about, .testimonials, .footer {
+        padding: 20px; /* Adjust padding for mobile */
+    }
 }
-
 
