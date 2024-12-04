@@ -122,37 +122,57 @@ img.rounded-full {
 
 
 
-/* Global Styles */
+/* Global Reset */
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /* Disable horizontal scrolling */
   width: 100%; /* Ensure the body spans the full width of the viewport */
 }
 
+/* Reset Box Sizing */
 * {
-  box-sizing: border-box; /* Include padding and border in element width/height */
+  box-sizing: border-box; /* Include padding and border in element dimensions */
 }
 
-/* Reset any possible oversized elements */
-.container,
+/* Fix Overflow Issues */
+.banner, 
+.bottom-img, 
+.footer-img, 
+.navbar, 
+.container, 
 .row {
-  max-width: 100%; /* Prevent elements from exceeding the viewport width */
+  max-width: 100%; /* Prevent elements from overflowing */
+  overflow: hidden; /* Ensure no overflow within containers */
 }
 
-/* Additional Specific Fixes */
-.banner,
-.bottom-img,
-.footer-img {
-  width: 100%; /* Ensure images don't overflow */
+/* Specific Fix for Images */
+img {
+  max-width: 100%; /* Scale images to fit their containers */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.navbar,
-.navbar-brand img,
+/* Navbar Adjustments */
+.navbar-brand img {
+  max-width: 100%; /* Ensure the logo doesn't overflow */
+}
+
 .navbar-nav {
-  max-width: 100%; /* Prevent navbar content overflow */
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping but ensure no overflow */
 }
 
-.slider .slide {
-  max-width: 100%; /* Contain slides within their container */
+.navbar-toggler {
+  margin-left: auto; /* Align toggler properly */
+}
+
+/* Fix for Sliders or Large Content */
+.slider, .slide {
+  width: 100%; /* Ensure sliders fit within the viewport */
+  overflow: hidden; /* Prevent any horizontal scroll caused by sliding content */
+}
+
+/* Footer Images */
+.footer-box img {
+  max-width: 100%; /* Ensure footer images are responsive */
 }
