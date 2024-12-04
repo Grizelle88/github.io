@@ -447,41 +447,25 @@
   </script>
   
 
-  <!-- GetButton.io widget for itsmegrizelle -->
+  <!-- GetButton.io widget -->
 <script type="text/javascript">
-  (function () {
-      var options1 = {
-          facebook: "urgrizelle", // Facebook Messenger username for the first user
-          link: "https://m.me/urgrizelle", // Messenger link for the first user
-          call_to_action: "Message UrGrizelle", // Call to action for the first button
-          button_color: "#0084ff", // Color of button (Messenger blue)
-          position: "right", // Position may be 'right' or 'left'
-          link_color: "#0084ff" // Link color
-      };
-
-      var options2 = {
-          facebook: "itsmegrizelle", // Facebook Messenger username for the second user
-          link: "https://m.me/itsmegrizelle", // Messenger link for the second user
-          call_to_action: "Message ItsMeGrizelle", // Call to action for the second button
-          button_color: "#0084ff", // Color of button (Messenger blue)
-          position: "left", // Position may be 'right' or 'left'
-          link_color: "#0084ff" // Link color
-      };
-
-      var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
-      var s = document.createElement('script'); 
-      s.type = 'text/javascript'; 
-      s.async = true; 
-      s.src = url + '/widget-send-button/js/init.js';
-      s.onload = function () { 
-          WhWidgetSendButton.init(host, proto, options1); 
-          WhWidgetSendButton.init(host, proto, options2); 
-      };
-      var x = document.getElementsByTagName('script')[0]; 
-      x.parentNode.insertBefore(s, x);
-  })();
+    (function () {
+        var options = {
+            facebook: "itsmegrizelle", // Your Facebook Messenger username
+            link: "https://m.me/urgrizelle", // Your website link
+            call_to_action: "Message Us", // Call to action
+            button_color: "#000000", // Color of button (black)
+            position: "right", // Position may be 'right' or 'left'
+            link_color: "#000000" // Button color for the website link
+        };
+        var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
 </script>
 <!-- /GetButton.io widget -->
+
 
 
 <!-- Footer -->
