@@ -117,22 +117,33 @@ img.rounded-full {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Prevent horizontal scrolling */
 body {
-    overflow-x: hidden; /* Hides horizontal overflow */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Apply box-sizing */
 * {
-    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-/* Ensure no elements exceed the viewport width */
+img {
+    max-width: 100%; /* Ensure images do not exceed their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .container, .row, .col {
-    max-width: 100%; /* Prevents elements from exceeding the viewport */
+    width: 100%; /* Ensure containers do not exceed the viewport */
 }
 
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin-right: 0; /* Adjust margins for mobile */
+    }
 
+    .banner {
+        padding: 20px; /* Adjust padding for mobile */
+    }
 
+    /* Add other mobile-specific styles here */
+}
 
 
