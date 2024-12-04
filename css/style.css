@@ -123,33 +123,20 @@ img.rounded-full {
 
 
 body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    width: 100%; /* Ensure body takes up full width */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
-/* Ensure all containers and elements take up full width */
-.container, .row, .col, .navbar, .banner, .services, .about, .testimonials, .footer {
-    width: 100%; /* Take up full width */
-    max-width: 100%; /* Prevent exceeding full width */
-    padding: 0 15px; /* Add padding for better layout */
-    margin: 0 auto; /* Center elements horizontally */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+img {
+  max-width: 100%; /* Ensure images do not exceed their container */
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* Adjust margins and padding for mobile devices */
-@media (max-width: 768px) {
-    .navbar-nav {
-        margin-right: 0; /* Adjust margins for mobile */
-    }
-
-    .banner {
-        padding: 20px; /* Adjust padding for mobile */
-    }
-
-    .services, .about, .testimonials, .footer {
-        padding: 20px; /* Adjust padding for mobile */
-    }
+.container, .row, .col {
+  width: 100%; /* Ensure containers do not exceed the viewport */
+  max-width: 100%; /* Prevent exceeding full width */
+  padding: 0 15px; /* Add padding for better layout */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
