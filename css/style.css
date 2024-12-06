@@ -176,3 +176,17 @@ img {
 .footer-box img {
   max-width: 100%; /* Ensure footer images are responsive */
 }
+
+#nav-bar {
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Change this to match your design */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+}
