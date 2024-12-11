@@ -170,31 +170,40 @@
 
 
 
-<!-- Products Section -->
+ <!-- Products Section -->
 <section id="products" class="py-5 bg-light">
   <div class="container">
     <h3 class="title text-center mb-4">Featured Products</h3>
     <div class="product-row d-flex justify-content-around flex-wrap">
+      <style>
+        .product-card img {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card img:hover {
+          transform: scale(1.05);
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+      </style>
       <!-- Product Card 1 -->
+      <div class="product-card bg-white p-4 rounded shadow-lg m-3" style="width: 18rem;">
+        <img alt="Motivational AI Reels Bundle" class="card-img-top rounded mb-3" src="https://raketcontent.com/1_136ee8f4d9.jpg" />
+        <h5 class="text-center font-weight-bold mb-2">Motivational AI Reels Bundle</h5>
+        <p class="text-muted text-center mb-3">Inspire your audience with this ready-to-use bundle of AI-generated motivational reels. Perfect for social media growth!</p>
+        <a class="btn btn-custom btn-block" href="https://www.raket.ph/grizelletoledo3282000/products/motivational-ai-reels-bundle">BUY NOW</a>
+      </div>          
+      <!-- Product Card 2 -->
       <div class="product-card bg-white p-4 rounded shadow-lg m-3" style="width: 18rem;">
         <img alt="Customizable Burger Ads Templates" class="card-img-top rounded mb-3" src="https://raketcontent.com/1_ca5e1c5a57.jpg" />
         <h5 class="text-center font-weight-bold mb-2">Customizable Burger Ads Templates</h5>
         <p class="text-muted text-center mb-3">Elevate your burger business with these eye-catching, editable social media templates.</p>
         <a class="btn btn-custom btn-block" href="https://www.raket.ph/grizelletoledo3282000/products/customizable-burger-ads-templates-for-social-media-post">BUY NOW</a>
-      </div>      
-      <!-- Product Card 2 -->
+      </div>   
+      <!-- Product Card 3 -->
       <div class="product-card bg-white p-4 rounded shadow-lg m-3" style="width: 18rem;">
         <img alt="Instagram Templates" class="card-img-top rounded mb-3" src="https://raketcontent.com/1_cc27f72987.jpg" />
         <h5 class="text-center font-weight-bold mb-2">Instagram Templates</h5>
         <p class="text-muted text-center mb-3">Elevate your esthetician brand with these stunning Instagram templates.</p>
         <a class="btn btn-custom btn-block" href="https://www.raket.ph/grizelletoledo3282000/products/instagram-templates-to-elevate-your-esthetician-brands">BUY NOW</a>
-      </div>
-      <!-- Product Card 3 -->
-      <div class="product-card bg-white p-4 rounded shadow-lg m-3" style="width: 18rem;">
-        <img alt="Infographic Fitness Posts" class="card-img-top rounded mb-3" src="https://raketcontent.com/1_c9dcdf043a.jpg" />
-        <h5 class="text-center font-weight-bold mb-2">Infographic Fitness and Health Posts</h5>
-        <p class="text-muted text-center mb-3">Boost your social media presence with these engaging fitness and health posts.</p>
-        <a class="btn btn-custom btn-block" href="https://www.raket.ph/grizelletoledo3282000/products/infographic-fitness-and-health-social-media-posts-canva-templates">BUY NOW</a>
       </div>
     </div>
 
@@ -210,13 +219,18 @@
       <div class="product-row d-flex justify-content-around flex-wrap">
         <!-- Product Card 4 -->
         <div class="product-card bg-white p-4 rounded shadow-lg m-3" style="width: 18rem;">
+          <img alt="Infographic Fitness Posts" class="card-img-top rounded mb-3" src="https://raketcontent.com/1_c9dcdf043a.jpg" />
+          <h5 class="text-center font-weight-bold mb-2">Infographic Fitness and Health Posts</h5>
+          <p class="text-muted text-center mb-3">Boost your social media presence with these engaging fitness and health posts.</p>
+          <a class="btn btn-custom btn-block" href="https://www.raket.ph/grizelletoledo3282000/products/infographic-fitness-and-health-social-media-posts-canva-templates">BUY NOW</a>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="product-card bg-white p-4 rounded shadow-lg m-3" style="width: 18rem;">
           <img alt="Personal Planner" class="card-img-top rounded mb-3" src="https://raketcontent.com/1_a63750142d.jpg" />
           <h5 class="text-center font-weight-bold mb-2">Personal Planner</h5>
           <p class="text-muted text-center mb-3">Organize your life with this ultimate personal planner template.</p>
           <a class="btn btn-custom btn-block" href="https://www.raket.ph/grizelletoledo3282000/products/personal-planner-your-ultimate-life-organizer-editable-canva-template">BUY NOW</a>
         </div>
-        <!-- Product Card 5 -->
-        
       </div>
     </div>
   </div>
@@ -224,6 +238,8 @@
 
 <!-- Add Bootstrap JS (if not already included) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
 
    <!-- Services Section -->
